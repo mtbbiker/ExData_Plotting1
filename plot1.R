@@ -19,3 +19,7 @@ smalldata$Global_active_power <- as.numeric(smalldata$Global_active_power)
 
 #hist(as.numeric(smalldata$Global_active_power), col = "orange",breaks = 100)
 hist(smalldata$Global_active_power, col = "orange",main = "Global Active Power",xlab = "Global Active Power(kilowatts)")
+
+dev.copy(device = png, filename = 'plot1.png', width = 480, height = 480) 
+
+dev.off()
