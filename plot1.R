@@ -11,3 +11,6 @@ pol_data$Date <- as.Date(strptime(pol_data$Date,"%d/%m/%Y"),"%Y-%m-%d" )
 #pol_data$Date <- strptime(pol_data$Date,"%d/%m/%Y")
 
 smalldata <- subset(pol_data, Date >= "2007-02-01" & Date <= "2007-02-02")
+
+#hist(as.numeric(smalldata$Global_active_power), col = "orange",breaks = 100)
+hist(as.numeric(smalldata$Global_active_power), col = "orange",breaks = 100)
